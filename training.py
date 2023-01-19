@@ -75,8 +75,8 @@ def fl_training(conf, port):
         clients.append(Client(conf, server.global_model, train_datasets, c))
 
     # Initialize the acc and loss lists
-    acc_list = {}
-    lost_list = {}
+    acc_list = []
+    lost_list = []
 
     ''' Training epoch '''
     sns.set()
